@@ -52,3 +52,26 @@ main {
   padding: 30px 20px;
   font-size: 24px;
 }
+
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #3E5944;
+  color: #F5F1E3;
+}
+
+.catchphrase {
+  font-size: 2.2rem;
+  font-weight: bold;
+  text-align: center;
+  margin: 80px auto;
+  max-width: 900px;
+  padding: 20px;
+  color: #F5F1E3;
+
+  text-shadow:
+    0 0 4px rgba(245, 241, 227, 0.3),
+    0 0 8px rgba(245, 241, 227, 0.2);
+}
+
