@@ -318,3 +318,73 @@ footer nav {
   background-color: #28a745;
 }
 
+#gender-slider {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  background: transparent;
+  margin: 10px 0;
+}
+
+#gender-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 20px;
+  width: 20px;
+  background-color: #4CAF50;
+  border-radius: 50%;
+  cursor: pointer;
+  border: none;
+}
+
+#gender-slider::-moz-range-thumb {
+  height: 20px;
+  width: 20px;
+  background-color: #4CAF50;
+  border-radius: 50%;
+  cursor: pointer;
+  border: none;
+}
+
+#gender-slider::-webkit-slider-runnable-track,
+#gender-slider::-moz-range-track {
+  height: 5px;
+  background: #ccc;
+  border-radius: 5px;
+}
+
+.slider-labels {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  padding: 0 5px;
+  margin-top: 5px;
+}
+
+.slider-labels span {
+  color: #888;
+  font-weight: normal;
+  transition: color 0.3s, font-weight 0.3s;
+}
+
+.slider-labels .active {
+  color: #4CAF50;
+  font-weight: bold;
+}
+
+.imageee {
+  width: 50%;  
+  height: auto;
+  border-radius: 10px;
+  margin: 20px auto 0 auto;
+  display: block;
+}
+
+
+.imageeee {
+  width: 15%;  
+  height: auto;
+  border-radius: 10px;
+  margin: 20px auto 0 auto;
+  display: block;
+}

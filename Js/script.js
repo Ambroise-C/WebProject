@@ -12,3 +12,15 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
+document.addEventListener("DOMContentLoaded", () => {
+  const loginButton = document.querySelector('button[data-page="4"]');
+  const isLoggedIn = localStorage.getItem("isLoggedIn") === "true";
+
+  if (loginButton && isLoggedIn) {
+    loginButton.textContent = "My Profile";
+    loginButton.removeAttribute("data-page");
+    loginButton.addEventListener("click", () => {
+      window.location.href = "User_Page.html";
+    });
+  }
+});

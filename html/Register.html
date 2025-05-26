@@ -15,20 +15,49 @@
   </header>
 
   <main id="content">
-    <div class="auth-container">
-      <h2>Register</h2>
-      <form id="register-form" class="auth-form">
-        <label for="reg-username">Username:</label>
-        <input type="text" id="reg-username" required />
+  <div class="auth-container">
+    <h2>Register</h2>
+    <form id="register-form" class="auth-form">
+      <label for="reg-firstname">First Name:</label>
+      <input type="text" id="reg-firstname" name="firstname" required />
 
-        <label for="reg-password">Password:</label>
-        <input type="password" id="reg-password" required />
+      <label for="reg-lastname">Last Name:</label>
+      <input type="text" id="reg-lastname" name="lastname" required />
 
-        <button type="submit">Register</button>
-      </form>
-      <p>Already have an account? <a href="login.html">Login here</a>.</p>
-    </div>
-  </main>
+      <label for="reg-dob">Date of Birth:</label>
+      <input type="date" id="reg-dob" name="dob" required />
+
+  <label for="gender-slider">Gender:</label>
+<div class="slider-container">
+  <input type="range" id="gender-slider" name="gender-slider" min="0" max="2" step="1" value="0" />
+  <div class="slider-labels">
+    <span id="label-0">Male</span>
+    <span id="label-1">Female</span>
+    <span id="label-2">Other</span>
+  </div>
+  <input type="hidden" name="gender" id="gender-value" value="male" />
+</div>
+
+
+
+      <label for="reg-role">Role:</label>
+      <select id="reg-role" name="role" required>
+        <option value="">-- Select --</option>
+        <option value="donor">Donor</option>
+        <option value="receiver">Receiver</option>
+      </select>
+
+      <label for="reg-username">Username:</label>
+      <input type="text" id="reg-username" name="username" required />
+
+      <label for="reg-password">Password:</label>
+      <input type="password" id="reg-password" name="password" required />
+
+      <button type="submit">Register</button>
+    </form>
+    <p>Already have an account? <a href="login.html">Login here</a>.</p>
+  </div>
+</main>
 
   <footer>
     <div id="logo">
