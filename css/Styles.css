@@ -200,3 +200,62 @@ footer nav {
   border: 2px solid #2a9d8f;
   border-radius: 8px;
 }
+
+.recipe-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2em auto;
+  max-width: 1000px;
+  gap: 2em;
+  padding: 1.5em;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  background-color: #f9f9f9;
+  flex-wrap: wrap;
+}
+
+.recipe-row.reverse {
+  flex-direction: row-reverse;
+}
+
+.recipe-photo {
+  width: 300px;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.recipe-text {
+  flex: 1;
+  max-width: 600px;
+  color: #3E5944;
+}
+
+.recipe-buttons {
+  margin-top: 1em;
+}
+
+.like-btn, .dislike-btn {
+  font-size: 1em;
+  padding: 0.5em 1em;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+
+.recipe-buttons {
+  margin-top: 1em;
+}
+
+.recipe-buttons button.like-btn,
+.recipe-buttons button.dislike-btn {
+  font-size: 1em;
+  padding: 0.5em 1em;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.counter {
+  font-weight: bold;
+}

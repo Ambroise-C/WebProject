@@ -14,28 +14,72 @@
     <button data-page="4">Login</button>
   </header>
 
-  <main id="content">
-    Page 4
-  </main>
+ <main id="content">
+  <div class="recipe-row" id="recipe1">
+    <img src="../image/crepe.jpg" alt="Homemade Crêpes" class="recipe-photo" />
+    <div class="recipe-text">
+      <h2>Homemade Crêpes</h2>
+      <p>A simple recipe for delicious light and fluffy crêpes.</p>
+      <p><strong>Ingredients:</strong> flour, eggs, milk, butter, sugar.</p>
+      <p><strong>Preparation:</strong> Mix the ingredients, cook in a pan, enjoy warm.</p>
+      <div class="recipe-buttons">
+        <button class="like-btn" onclick="vote('recipe1', 'like')">👍 Like</button>
+        <button class="dislike-btn" onclick="vote('recipe1', 'dislike')">👎 Dislike</button>
+      </div>
+      <p>Likes: <span class="counter" id="recipe1-likes">0</span> | Dislikes: <span class="counter" id="recipe1-dislikes">0</span></p>
+    </div>
+  </div>
 
-  <footer>
-    <div id="logo">
-        <a href="Home.html">
-            <img src="img/logo.png.png" alt="Logo">
-        </a>
+  <div class="recipe-row reverse" id="recipe2">
+    <div class="recipe-text">
+      <h2>Ratatouille</h2>
+      <p>A stewed Provençal dish, rich in colorful and tasty vegetables.</p>
+      <p><strong>Ingredients:</strong> eggplants, zucchinis, bell peppers, tomatoes, onions.</p>
+      <p><strong>Preparation:</strong> Sauté the vegetables, then simmer gently.</p>
+      <div class="recipe-buttons">
+        <button class="like-btn" onclick="vote('recipe2', 'like')">👍 Like</button>
+        <button class="dislike-btn" onclick="vote('recipe2', 'dislike')">👎 Dislike</button>
+      </div>
+      <p>Likes: <span class="counter" id="recipe2-likes">0</span> | Dislikes: <span class="counter" id="recipe2-dislikes">0</span></p>
     </div>
-    <div class="footer-content">
-        <nav>
-            <div class="lower_button"><a href="About_us.html">About us</a></div>
-            <div class="lower_button"><a href="https://fr.wikipedia.org/wiki/Gaspillage_alimentaire">Find out more about</a></div>
-            <div class = "lower_button"><a href="https://www.restosducoeur.org/se-mobiliser-en-ligne/">Support us</a></div>
-        </nav>
-        <div class="footer-info">
-            © FreeFood 2025 © – Your way to share
-        </div>
+    <img src="../image/ratatouille.jpg" alt="Ratatouille" class="recipe-photo" />
+  </div>
+
+  <div class="recipe-row" id="recipe3">
+    <img src="../image/tarteaupomme.jpg" alt="Apple Tart" class="recipe-photo" />
+    <div class="recipe-text">
+      <h2>Apple Tart</h2>
+      <p>A classic French dessert with a crispy crust and soft apples.</p>
+      <p><strong>Ingredients:</strong> shortcrust pastry, apples, sugar, butter.</p>
+      <p><strong>Preparation:</strong> Roll out the dough, arrange the apples, sprinkle with sugar, bake.</p>
+      <div class="recipe-buttons">
+        <button class="like-btn" onclick="vote('recipe3', 'like')">👍 Like</button>
+        <button class="dislike-btn" onclick="vote('recipe3', 'dislike')">👎 Dislike</button>
+      </div>
+      <p>Likes: <span class="counter" id="recipe3-likes">0</span> | Dislikes: <span class="counter" id="recipe3-dislikes">0</span></p>
     </div>
+  </div>
+</main>
+
+<footer>
+  <div id="logo">
+      <a href="Home.html">
+          <img src="../image/Logo.png" alt="Logo">
+      </a>
+  </div>
+  <div class="footer-content">
+      <nav>
+          <div class="lower_button"><a href="About_us.html">About us</a></div>
+          <div class="lower_button"><a href="https://fr.wikipedia.org/wiki/Gaspillage_alimentaire">Find out more about</a></div>
+          <div class="lower_button"><a href="https://www.restosducoeur.org/se-mobiliser-en-ligne/">Support us</a></div>
+      </nav>
+      <div class="footer-info">
+          © FreeFood 2025 © – Your way to share
+      </div>
+  </div>
 </footer>
 
-  <script src="../Js/script.js"></script>
+<script src="../Js/script.js"></script>
+<script src="../Js/recipe.js"></script>
 </body>
 </html>
