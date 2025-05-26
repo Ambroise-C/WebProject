@@ -4,6 +4,13 @@
   <meta charset="UTF-8" />
   <title>Free Food</title>
   <link rel="stylesheet" href="../css/Styles.css" />
+
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    crossorigin=""
+  />
+
 </head>
 <body>
   <header>
@@ -15,28 +22,32 @@
   </header>
 
   <main id="content">
-    Page 3
+    <div id="map"></div>
   </main>
 
-  <script src="../Js/script.js"></script>
   <footer>
+    <div id="logo">
+      <a href="Home.html">
+        <img src="img/logo.png.png" alt="Logo" />
+      </a>
+    </div>
 
-              <div id="logo">
-            <a href="Home.html">
-                <img src="img/logo.png.png" alt="Logo">
-            </a>
-        </div>
+    <div class="footer-content">
+      <nav>
+        <div class="lower_button"><a href="About_us.html">About us</a></div>
+        <div class="lower_button"><a href="https://fr.wikipedia.org/wiki/Gaspillage_alimentaire">Find out more about</a></div>
+        <div class="lower_button"><a href="https://www.restosducoeur.org/se-mobiliser-en-ligne/">Support us</a></div>
+      </nav>
+      <div class="footer-info">© FreeFood 2025 © – Your way to share</div>
+    </div>
+  </footer>
 
-        <div class="footer-content">
-            <nav>
-                <div class="lower_button"><a href="About_us.html">About us</a></div>
-                <div class="lower_button"><a href="https://fr.wikipedia.org/wiki/Gaspillage_alimentaire">Find out more about</a></div>
-                <div class = "lower_button"><a href="https://www.restosducoeur.org/se-mobiliser-en-ligne/">Support us</a></div>
-            </nav>
-            <div class="footer-info">
-                © FreeFood 2025 © – Your way to share
-            </div>
-        </div>
-        </footer>
+  <script
+    src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    crossorigin=""
+  ></script>
+
+  <script src="../Js/script.js"></script>
+  <script src="../Js/map.js"></script>
 </body>
 </html>

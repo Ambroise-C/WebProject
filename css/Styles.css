@@ -75,3 +75,128 @@ body {
     0 0 8px rgba(245, 241, 227, 0.2);
 }
 
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: #B5C8A4;
+    padding: 20px 40px;
+    flex-wrap: wrap;
+}
+
+#logo img {
+    width: 64px;
+    height: auto;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+/* Liens du haut */
+footer nav {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 10px;
+}
+
+/* Liens stylisés comme des petits rectangles */
+.lower_button a {
+    color: #F5F1E3;
+    text-decoration: none;
+    font-weight: bold;
+    border: 2px solid #F5F1E3;
+    padding: 6px 12px;
+    border-radius:99px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.lower_button a:hover {
+    background-color: #F5F1E3;
+    color: #3E5944;
+}
+
+/* Texte du bas */
+.footer-info {
+    color: #F5F1E3;
+    font-size: 14px;
+    text-align: right;
+}
+
+.auth-container {
+  max-width: 400px;
+  margin: 100px auto;
+  background-color: #B5C8A4;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.auth-container h2 {
+  text-align: center;
+  color: #3E5944;
+  margin-bottom: 1.5rem;
+}
+
+.auth-form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.auth-form input {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1.2rem;
+  border: 1px solid #3E5944;
+  border-radius: 8px;
+  background-color: #F5F1E3;
+  color: #3E5944;
+}
+
+.auth-form input:focus {
+  outline: none;
+  border-color: #E89F71;
+  box-shadow: 0 0 5px #E89F71;
+}
+
+.auth-form button {
+  width: 100%;
+  padding: 0.7rem;
+  background-color: #E89F71;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.auth-form button:hover {
+  background-color: #d8875a;
+}
+
+.auth-container p {
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 0.95rem;
+}
+
+.auth-container a {
+  color: #3E5944;
+  text-decoration: underline;
+}
+
+.auth-container a:hover {
+  color: #E89F71;
+}
+
+#map {
+  height: 80vh;
+  width: 100%;
+  margin-top: 1rem;
+  border: 2px solid #2a9d8f;
+  border-radius: 8px;
+}

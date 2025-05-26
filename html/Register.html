@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Free Food</title>
+  <title>Register – Free Food</title>
   <link rel="stylesheet" href="../css/Styles.css" />
 </head>
 <body>
@@ -15,9 +15,37 @@
   </header>
 
   <main id="content">
-    Page 1
+    <div class="auth-container">
+      <h2>Register</h2>
+      <form id="register-form" class="auth-form">
+        <label for="reg-username">Username:</label>
+        <input type="text" id="reg-username" required />
+
+        <label for="reg-password">Password:</label>
+        <input type="password" id="reg-password" required />
+
+        <button type="submit">Register</button>
+      </form>
+      <p>Already have an account? <a href="login.html">Login here</a>.</p>
+    </div>
   </main>
 
+  <footer>
+    <div id="logo">
+      <a href="Home.html"><img src="img/logo.png.png" alt="Logo" /></a>
+    </div>
+    <div class="footer-content">
+      <nav>
+        <div class="lower_button"><a href="About_us.html">About us</a></div>
+        <div class="lower_button"><a href="https://fr.wikipedia.org/wiki/Gaspillage_alimentaire">Find out more</a></div>
+        <div class="lower_button"><a href="https://www.restosducoeur.org/se-mobiliser-en-ligne/">Support us</a></div>
+      </nav>
+      <div class="footer-info">© FreeFood 2025 – Your way to share</div>
+    </div>
+  </footer>
+
   <script src="../Js/script.js"></script>
+  <script src="../Js/register.js"></script>
 </body>
 </html>
+
