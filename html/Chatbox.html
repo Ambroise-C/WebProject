@@ -15,8 +15,19 @@
   </header>
 
   <main id="content">
-    Page 2
-  </main>
+  <div class="chat-container">
+    <div class="chatbox" id="chatbox">
+    </div>
+    <div class="input-area">
+      <input type="text" class="message-input" id="messageInput" placeholder="Écris ton message ici..." />
+      <div class="buttons">
+        <button class="btn btn-donneur" onclick="sendMessage('donneur')">Send (Donor)</button>
+        <button class="btn btn-receveur" onclick="sendMessage('receveur')">Send (Receiver)</button>
+      </div>
+    </div>
+  </div>
+</main>
+
 
   <footer>
     <div id="logo">
@@ -37,5 +48,6 @@
 </footer>
 
   <script src="../Js/script.js"></script>
+  <script src="../Js/chat.js"></script>
 </body>
 </html>

@@ -259,3 +259,62 @@ footer nav {
 .counter {
   font-weight: bold;
 }
+
+/* CHAT STYLES */
+.chat-container {
+  width: 600px; /* Agrandissement */
+  margin: 30px auto;
+  background-color: transparent; /* Fond transparent */
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  color: #3E5944; /* Couleur du texte */
+}
+
+.chatbox {
+  height: 400px; /* Plus grande */
+  padding: 10px;
+  overflow-y: auto;
+  border: 2px solid #3E5944; /* Ajout d'une bordure visible si fond transparent */
+  border-radius: 10px;
+}
+
+.input-area {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  gap: 10px;
+}
+
+.message-input {
+  width: 100%;
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  color: #3E5944;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn {
+  padding: 8px 12px;
+  font-size: 14px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+}
+
+.btn-donneur {
+  background-color: #007BFF;
+}
+
+.btn-receveur {
+  background-color: #28a745;
+}
+
